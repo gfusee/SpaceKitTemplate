@@ -27,7 +27,7 @@ let package = Package(
             dependencies: [
                 "##TARGET_NAME##"
             ],
-            path: "Contracts/##TARGET_NAME##Tests/Tests"
+            path: "Contracts/##TARGET_NAME##/Tests/##TARGET_NAME##Tests"
         )
     ]
 )
