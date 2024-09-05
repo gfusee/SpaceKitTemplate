@@ -23,11 +23,11 @@ let package = Package(
             path: "Contracts/##TARGET_NAME##/Sources"
         ),
         .testTarget(
-            name: "AdderTests",
+            name: "##TARGET_NAME##Tests",
             dependencies: [
-                "Adder"
+                "##TARGET_NAME##"
             ],
-            path: "Contracts/##TARGET_NAME##/Tests"
+            path: "Contracts/##TARGET_NAME##Tests/Tests"
         )
     ]
 )
