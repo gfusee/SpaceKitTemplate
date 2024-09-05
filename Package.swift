@@ -20,14 +20,14 @@ let package = Package(
             dependencies: [
                 .product(name: "Space", package: "Space")
             ],
-            path: "Contracts/Adder/Sources"
+            path: "Contracts/##TARGET_NAME##/Sources"
         ),
         .testTarget(
             name: "AdderTests",
             dependencies: [
                 "Adder"
             ],
-            path: "Contracts/Adder/Tests"
+            path: "Contracts/##TARGET_NAME##/Tests"
         )
     ]
 )
