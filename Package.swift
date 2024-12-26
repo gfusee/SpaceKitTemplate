@@ -8,7 +8,14 @@ let package = Package(
     platforms: [
         .macOS(.v14)
     ],
-    products: [],
+    products: [
+        .library(
+            name: "##TARGET_NAME##",
+            targets: [
+                "##TARGET_NAME##"
+            ]
+        )
+    ],
     dependencies: [
         .package(url: "https://github.com/gfusee/SpaceKit.git", exact: "0.0.4")
     ],
