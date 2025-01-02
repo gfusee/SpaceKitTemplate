@@ -17,7 +17,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/gfusee/SpaceKit.git", exact: "0.0.4")
+        .package(url: "https://github.com/gfusee/SpaceKit.git", exact: "0.1.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
