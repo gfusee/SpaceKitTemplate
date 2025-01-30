@@ -17,7 +17,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/gfusee/SpaceKit.git", exact: "0.1.1")
+        .package(url: "https://github.com/gfusee/SpaceKit.git", exact: "0.2.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -32,7 +32,8 @@ let package = Package(
         .testTarget(
             name: "##TARGET_NAME##Tests",
             dependencies: [
-                "##TARGET_NAME##"
+                "##TARGET_NAME##",
+                .product(name: "SpaceKitTesting", package: "SpaceKit")
             ],
             path: "Contracts/##TARGET_NAME##/Tests/##TARGET_NAME##Tests"
         )

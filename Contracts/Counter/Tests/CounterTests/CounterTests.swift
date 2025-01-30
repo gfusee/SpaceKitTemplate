@@ -1,6 +1,5 @@
-import SpaceKit
 import ##TARGET_NAME##
-import XCTest
+import SpaceKitTesting
 
 let COUNTER_ADDRESS = "counter"
 
